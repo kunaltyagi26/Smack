@@ -200,10 +200,10 @@
             </objects>
             <point key="canvasLocation" x="965.60000000000002" y="-196.55172413793105"/>
         </scene>
-        <!--View Controller-->
+        <!--LoginVC-->
         <scene sceneID="ldc-mN-ECU">
             <objects>
-                <viewController id="0rI-Sm-Pnf" sceneMemberID="viewController">
+                <viewController id="0rI-Sm-Pnf" customClass="LoginVC" customModule="Smack" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fIV-Ol-QaR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -229,6 +229,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jue-rR-lvE">
                                 <rect key="frame" x="331" y="20" width="28" height="28"/>
                                 <state key="normal" image="closeButton"/>
+                                <connections>
+                                    <action selector="closePressed:" destination="0rI-Sm-Pnf" eventType="touchUpInside" id="Vmd-hP-TxD"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Enr-6i-xf8">
                                 <rect key="frame" x="62" y="287" width="250" height="50"/>
@@ -281,18 +284,18 @@
                                     </view>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E69-kt-PCe" userLabel="Sign Up Stack View">
-                                <rect key="frame" x="80.5" y="337" width="214.5" height="30"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="E69-kt-PCe" userLabel="Sign Up Stack View">
+                                <rect key="frame" x="63.5" y="337" width="248" height="33"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account? Sign up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7rZ-gB-lvY">
-                                        <rect key="frame" x="0.0" y="0.0" width="184.5" height="30"/>
-                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="13"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="213" height="33"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1qk-Fs-H20">
-                                        <rect key="frame" x="184.5" y="0.0" width="30" height="30"/>
-                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="13"/>
+                                        <rect key="frame" x="218" y="0.0" width="30" height="33"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
                                         <state key="normal" title="here"/>
                                     </button>
                                 </subviews>
@@ -313,6 +316,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8Rj-AW-mKH"/>
                     </view>
+                    <connections>
+                        <outlet property="closePressed" destination="Jue-rR-lvE" id="ypp-wL-tai"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h10-z9-lj4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
