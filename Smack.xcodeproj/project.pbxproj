@@ -10,6 +10,7 @@
 		2B3134F81FB5553A00FB8D08 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3134F71FB5553A00FB8D08 /* GradientView.swift */; };
 		2B3134FB1FB6C39700FB8D08 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3134FA1FB6C39700FB8D08 /* Constants.swift */; };
 		2B3134FD1FB874E900FB8D08 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3134FC1FB874E900FB8D08 /* LoginVC.swift */; };
+		2B3134FF1FB87D8900FB8D08 /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3134FE1FB87D8900FB8D08 /* CreateAccountVC.swift */; };
 		2BD845581FB2B6B30093263D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD845571FB2B6B30093263D /* AppDelegate.swift */; };
 		2BD8455D1FB2B6B30093263D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BD8455B1FB2B6B30093263D /* Main.storyboard */; };
 		2BD8455F1FB2B6B30093263D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BD8455E1FB2B6B30093263D /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 		2B3134F71FB5553A00FB8D08 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		2B3134FA1FB6C39700FB8D08 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		2B3134FC1FB874E900FB8D08 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		2B3134FE1FB87D8900FB8D08 /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 		2BD845541FB2B6B30093263D /* Smack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BD845571FB2B6B30093263D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BD8455C1FB2B6B30093263D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				2BE099981FB4DE51002975D8 /* ChatVC.swift */,
 				2BE0999A1FB4DE61002975D8 /* ChannelVC.swift */,
 				2B3134FC1FB874E900FB8D08 /* LoginVC.swift */,
+				2B3134FE1FB87D8900FB8D08 /* CreateAccountVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 			files = (
 				2BE099991FB4DE51002975D8 /* ChatVC.swift in Sources */,
 				2B3134F81FB5553A00FB8D08 /* GradientView.swift in Sources */,
+				2B3134FF1FB87D8900FB8D08 /* CreateAccountVC.swift in Sources */,
 				2B3134FD1FB874E900FB8D08 /* LoginVC.swift in Sources */,
 				2BD845581FB2B6B30093263D /* AppDelegate.swift in Sources */,
 				2B3134FB1FB6C39700FB8D08 /* Constants.swift in Sources */,
