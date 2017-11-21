@@ -8,6 +8,7 @@
 
 import UIKit
 
+@IBDesignable
 class ChannelVC: UIViewController {
 
     @IBOutlet weak var loginBtn: UIButton!
@@ -16,7 +17,13 @@ class ChannelVC: UIViewController {
         super.viewDidLoad()
         self.revealViewController().rearViewRevealWidth = self.view.frame.size.width - 60
     }
+    
     @IBAction func loginBtnPressed(_ sender: UIButton) {
         performSegue(withIdentifier: TO_LOGIN, sender: nil) 
+    }
+    
+    @IBAction func unwindToChannel(segue: UIStoryboardSegue)
+    {
+        
     }
 }
